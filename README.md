@@ -1,9 +1,7 @@
 # GD3_HOTMCU
 Pantallas FT8xx compradas en http://HotMCU.com
 
-# GD2_HOTMCU
-Pantallas FT80x compradas en http://HotMCU.com
-Resolución 480 x 272 pixels
+Resolución 800 x 480 pixels
 
 # PINOUT con Arduino MEGA
 MISO = 50
