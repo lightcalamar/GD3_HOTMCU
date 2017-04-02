@@ -475,12 +475,22 @@ void GDClass::storage(void) {
 }
 
 void GDClass::self_calibrate(void) {
+	
+/*	
   #define RAM_TP1 0
 
   const unsigned char Tp1[] PROGMEM = {
     #include "Tp1.h"
   };
-  /*
+  */
+  
+  #define RAM_TP1 0
+  typedef const unsigned char prog_uchar;
+
+  static const PROGMEM prog_uchar Tp1[] = {
+    #include "Tp1.h"
+  };
+  
   cmd_dlstart();
   cmd_setrotate(ORIENTACION);
   
@@ -694,7 +704,7 @@ ColorRGB(255,0,0);
   cmd_loadidentity();
   cmd_dlstart();
   GDTR.flush();
-  */
+  
 }
 
 void GDClass::seed(uint16_t n) {
@@ -1607,11 +1617,17 @@ static const PROGMEM uint8_t __bsod_badfile[32] = {
 void GDClass::alert(const char *message)
 {
   #define RAM_RAD1 0
-
+/*
   const unsigned char Rad1[] PROGMEM = {
     #include "Rad1.h"
   };
-  /*
+  */
+  
+    typedef const unsigned char prog_uchar;
+
+  static const PROGMEM prog_uchar Rad1[] = {
+    #include "Rad1.h"
+  };
   begin();
   cmd_dlstart();
   cmd_setrotate(ORIENTACION);
@@ -1681,7 +1697,7 @@ if (ORIENTACION == 3){
   GD.finish();
   for (;;)
     ;
-*/
+
 }
 
 void GDClass::safeload(const char *filename)
