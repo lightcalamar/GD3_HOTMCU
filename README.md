@@ -20,4 +20,4 @@ Si usa Arduino UNO r3, modifique el PINOUT correspondiente.
 
 Modificar pin CS /transports/wiring.h
 
-Modificar MISO, MOSI, SCLK y PD GD3.cpp
+Modificar MISO, MOSI, SCLK y PD gd3.cpp
