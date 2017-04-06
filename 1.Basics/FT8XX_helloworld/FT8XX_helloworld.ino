@@ -12,6 +12,8 @@ void loop()
 {
   GD.ClearColorRGB(0x000020);
   GD.Clear();
-  GD.cmd_text(GD.w / 2, GD.h / 2, 31, OPT_CENTER, "Hello world");
+  GD.cmd_romfont(67, 34);    // Usando RON FONT NUMBER 34
+  GD.cmd_text(GD.w / 2, GD.h / 2, 67, OPT_CENTER, "Hello world");
+  // GD.cmd_text(GD.w / 2, GD.h / 2, 31, OPT_CENTER, "Hello world");
   GD.swap();
 }
