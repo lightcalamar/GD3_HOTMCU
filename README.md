@@ -21,3 +21,5 @@ Si usa Arduino UNO r3, modifique el PINOUT correspondiente.
 Modificar pin CS /transports/wiring.h
 
 Modificar MISO, MOSI, SCLK y PD gd3.cpp
+
+<a href="http://imgur.com/mmOPpx9"><img src="http://i.imgur.com/mmOPpx9.jpg" title="source: imgur.com" /></a>
